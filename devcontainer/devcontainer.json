@@ -1,23 +1,16 @@
 {
-  "name": "Node.js & React Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "20"
-    }
-  },
+  "name": "Web Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-20",
   "customizations": {
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "ms-vscode.vscode-typescript-next",
-        "streetsidesoftware.code-spell-checker",
-        "GitHub.codespaces"
+        "ms-vscode.live-server"
       ]
     }
   },
-  "forwardPorts": [3000],
+  "forwardPorts": [5500],
   "postCreateCommand": "npm install",
   "remoteUser": "node"
 }
